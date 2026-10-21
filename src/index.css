@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #0B4F9E;
+    --color-primary-dark: #083A75;
+    --color-success: #1E9E5A;
+    --color-danger: #D62F3A;
+    --color-bg-section: #F3F6FA;
+    --color-text-main: #10161F;
+    --color-text-muted: #5B6675;
+    --color-border: #DDE3EA;
+  }
+
+  body {
+    font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--color-text-main);
+    background-color: #FFFFFF;
+  }
+}
+
+/* Custom scrollbar for desktop */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F6FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDE3EA;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0B4F9E;
+}
+
+/* Print optimizations for Quotations and Technical BOM sheets */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-break-inside-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .print-shadow-none {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+  }
+}

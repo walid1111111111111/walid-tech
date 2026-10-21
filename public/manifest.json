@@ -1,0 +1,20 @@
+{
+  "short_name": "تسعير PVC",
+  "name": "حاسبة ومقايسة نوافذ وأبواب PVC",
+  "description": "تطبيق تسعير وحساب كميات نوافذ وأبواب PVC بالدينار الجزائري",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0B4F9E",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "dir": "rtl",
+  "lang": "ar"
+}

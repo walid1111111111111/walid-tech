@@ -1,0 +1,6 @@
+{
+  "name": "حاسبة ومقايسة نوافذ وأبواب PVC",
+  "description": "تطبيق PWA لتسعير وحساب كميات نوافذ وأبواب PVC، إعداد عروض الأسعار والمقايسة الفنية وإدارة الطلبات والورشة بالدينار الجزائري.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F5EB8" />
+      <stop offset="100%" stop-color="#083A75" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Rounded App Background -->
+  <rect width="512" height="512" rx="108" fill="url(#blueGrad)" />
+
+  <!-- Window Outer Frame (White PVC Profile) -->
+  <g filter="url(#shadow)">
+    <rect x="96" y="96" width="320" height="320" rx="20" fill="#FFFFFF" stroke="#DDE3EA" stroke-width="6" />
+    
+    <!-- Outer profile bevel effect -->
+    <rect x="118" y="118" width="276" height="276" rx="12" fill="#E8EEF5" />
+    
+    <!-- Left Sash Outer -->
+    <rect x="126" y="126" width="124" height="260" rx="8" fill="#FFFFFF" stroke="#CFD8E3" stroke-width="4" />
+    <!-- Left Glass Panel -->
+    <rect x="140" y="140" width="96" height="232" rx="4" fill="#BFE3F7" fill-opacity="0.75" stroke="#90CAF9" stroke-width="2" />
+    <path d="M 152 152 L 200 240 M 168 152 L 216 240" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+
+    <!-- Right Sash Outer -->
+    <rect x="262" y="126" width="124" height="260" rx="8" fill="#FFFFFF" stroke="#CFD8E3" stroke-width="4" />
+    <!-- Right Glass Panel -->
+    <rect x="276" y="140" width="96" height="232" rx="4" fill="#BFE3F7" fill-opacity="0.75" stroke="#90CAF9" stroke-width="2" />
+    <path d="M 288 152 L 336 240 M 304 152 L 352 240" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+
+    <!-- Center Mullion Line & Seal -->
+    <line x1="256" y1="118" x2="256" y2="394" stroke="#DDE3EA" stroke-width="6" stroke-linecap="round" />
+
+    <!-- Sleek Green Handle (Distinguishing touch #1E9E5A) -->
+    <rect x="246" y="236" width="8" height="42" rx="4" fill="#1E9E5A" filter="url(#shadow)" />
+    <circle cx="250" cy="242" r="5" fill="#15803D" />
+  </g>
+</svg>
